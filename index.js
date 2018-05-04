@@ -21,7 +21,7 @@ function createWindow() {
         icon: path.join(__dirname, '../../assest/a.png')
     })
     win.loadURL(url.format({
-        pathname: path.join(__dirname, './src/enquiry/index.html'),
+        pathname: path.join(__dirname, './src/enquiry/html/index.html'),
         protocol: 'file:',
         slashes: true
     }))
@@ -40,7 +40,7 @@ const menuTemplate =[{
   label:'form1',
   click(){
     win1.loadURL(url.format({
-        pathname: path.join(__dirname, "./src/enquiry/form.html"),
+        pathname: path.join(__dirname, "./src/enquiry/html/form.html"),
         protocol: 'file:',
         slashes: true
     }))
@@ -50,7 +50,7 @@ const menuTemplate =[{
   label:'form2',
   click(){
     win1.loadURL(url.format({
-      pathname:path.join(__dirname,"./src/enquiry/form1.html"),
+      pathname:path.join(__dirname,"./src/enquiry/html/form1.html"),
       protocol:'file:',
       slashes:true
     }))
@@ -82,7 +82,7 @@ const baseMenuTemplate = [{
         label: '|||-------------------------ENQUIRY-------------------------|||',
         click() {
             win.loadURL(url.format({
-                pathname: path.join(__dirname, "./src/enquiry/index.html"),
+                pathname: path.join(__dirname, "./src/enquiry/html/index.html"),
                 protocol: 'file:',
                 slashes: true
             }))
@@ -91,7 +91,7 @@ const baseMenuTemplate = [{
               label: '|||----------------------------QUOTATION----------------------|||',
         click() {
             win.loadURL(url.format({
-                pathname: path.join(__dirname, './src/quotation/index.html'),
+                pathname: path.join(__dirname, './src/quotation/html/index.html'),
                 protocol: 'file:',
                 slashes: true
             }))
@@ -101,7 +101,7 @@ const baseMenuTemplate = [{
         label: '|||------------------------PURCHASE ORDER----------------------|||',
         click() {
           win.loadURL(url.format({
-              pathname: path.join(__dirname, './src/po/index.html'),
+              pathname: path.join(__dirname, './src/po/html/index.html'),
               protocol: 'file:',
               slashes: true
           }))
@@ -147,7 +147,7 @@ ipcMain.on('login', (event, arg) => {
       icon: path.join(__dirname, '../../assest/a.png')
   })
   win1.loadURL(url.format({
-      pathname: path.join(__dirname, './src/enquiry/form.html'),
+      pathname: path.join(__dirname, './src/enquiry/html/form.html'),
       protocol: 'file:',
       slashes: true,
   }))
